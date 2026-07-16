@@ -22,26 +22,26 @@ A content-based movie recommendation system built using **Python**, **Scikit-lea
 ## Dataset
 
 - TMDB Movie Dataset
-
 ## Project Structure
 
 ```text
 movie-recommender-system/
-├── app.py                 # Streamlit application
-├── README.md               # documentation
-├── requirements.txt         # dependencies
-├── .gitignore
+├── app.py                     # Streamlit application
+├── generate_model.py          # generates model artifacts from raw data
+├── README.md                  # documentation
+├── requirements.txt           # dependencies
+├── .gitignore  
 │
 ├── data/
 │   ├── tmdb_5000_movies.csv
 │   └── tmdb_5000_credits.csv
 │
-├── model/
-│   ├── movie_dict.pkl         # preprocessed movie metadata
-│   └── similarity.pkl         # similarity matrix
+├── models/
+│   ├── movie_dict.pkl
+│   └── similarity.pkl         # Generated locally (not tracked by Git)
 │
 └── notebooks/
-    └── movie-recommender.ipynb # data preprocessing & model building
+    └── exploration.ipynb
 ```
 
 ## Setup
