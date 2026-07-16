@@ -44,14 +44,38 @@ movie-recommender-system/
     └── movie-recommender.ipynb # data preprocessing & model building
 ```
 
-## Getting Started
+## Setup
+
+Clone the repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/<your-username>/movie-recommender-system.git
 cd movie-recommender-system
 
 pip install -r requirements.txt
+```
 
+### Generate Model Files
+
+The `similarity.pkl` file is **not included** in this repository because it exceeds GitHub's 100 MB file size limit.
+
+Generate the required model files by running:
+
+```bash
+python generate_model.py
+```
+
+This will create:
+
+```
+models/
+├── movie_dict.pkl
+└── similarity.pkl
+```
+
+Once the model files have been generated, start the application:
+
+```bash
 streamlit run app.py
 ```
 
